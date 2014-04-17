@@ -1,0 +1,1 @@
+Socketio chat, Android client (using Cordova)

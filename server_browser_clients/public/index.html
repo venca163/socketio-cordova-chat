@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Socket.io chat</title>
+        <meta charset='utf-8'>
+        
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        
+        <script src="lib/jquery-1.10.2.js"></script>
+        <script src="http://localhost:2301/socket.io/socket.io.js"></script>
+        <script src="/js/client.js"></script>
+        <script>
+            $(document).ready(function () {
+                new DP_SocketioChat();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <div id="chat">
+                <h1>
+                    Socket.io chat
+                </h1>
+                <div id="msgTextareaWrap">
+                    <textarea id="msgTextarea"></textarea>
+                </div>
+                <div id="sendMsg" class="pointer">
+                    send
+                </div>
+                <div id="messagesLog">
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,176 @@
+/*
+ * main css file
+ */
+
+/* ********************** GENERAL START ******************** */    
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, ul, li, input, label, a {
+    padding: 0;
+    margin: 0;
+}
+
+header, nav, article, footer, section, aside, figure, figcaption {
+    display: block;
+}
+
+
+body {
+    font-family: "Bookman Old Style", "Serifa BT", "URW Bookman L", "itc bookman", times, serif;
+    font-size: medium;
+    /*color: yellowgreen;*/
+    border: 0;
+    min-width: 610px;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+}
+
+#wrap {
+    width: 100%;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -3em; /* -3em - footer always pinned to bottom */
+
+    /*font-size: 95%;*/
+    text-align: left;
+    background: #eee;
+}
+
+footer div, #footer-helper {
+    height: 3em; /* footer always pinned to bottom */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0)  {
+  body{
+    -webkit-text-size-adjust: none;
+    /*font-size: 50%;*/
+  }
+}
+
+h1 {
+    text-align: center;
+    font-size: 150%;
+    color: yellowgreen;
+    margin-bottom: 20px;
+}
+
+a img {
+    border: none;
+}
+
+/* ********************** GENERAL END ******************** */    
+
+
+/* ********************** LAYOUT START ****************** */
+#chat {
+    width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    background: #111;
+}
+
+/* ********************** LAYOUT END ****************** */
+
+
+/* ********************** MENU START ************************ */
+
+
+/* ********************** MENU END   ************************ */
+
+
+/* ********************** HOMEPAGE START ********************* */
+#sendMsg {
+    width: 70px;
+    height: 20px;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: yellowgreen;
+    border: 1px solid #eee;
+    background: #111;
+}
+#sendMsg:active {
+    border: 1px solid yellowgreen;
+    color: #eee;
+}
+
+#msgTextarea {
+    display: block;
+    width: 400px;
+    height: 70px;
+    margin: 0 auto 20px;
+}
+
+#messagesLog h2 {
+    font-size: 120%;
+    color: yellowgreen;
+}
+
+#messagesLog p {
+    color: #eee;
+}
+
+/* ********************** HOMEPAGE END   ********************* */
+
+/* ********************** PAGES START ************************ */
+
+
+/* ********************** PAGES END   ************************ */
+
+
+
+/* ********************** CLASSES GENERAL START ****************** */
+.cleaner {
+    clear: both;
+    visibility: hidden;
+    height: 1px;
+    margin-top: -1px;
+    font-size:1px;
+    border:none;
+    margin:0; 
+    padding:0;
+    background:transparent;
+}
+
+.transparent {
+    zoom: 1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=95);
+    -moz-opacity:0.95;
+    -khtml-opacity: 0.95;
+    opacity: 0.95;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.msg {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* ********************** CLASSES GENERAL END ****************** */
+
+
+
+/* *********************** */
+input::-moz-focus-inner /*Remove button padding in FF*/
+{ 
+    border: 0;
+    padding: 0;
+}
+
+.alpha60 {
+/* Fallback for web browsers that doesn't support RGBa */
+background: rgb(0, 0, 0) transparent;
+/* RGBa with 0.6 opacity */
+background: rgba(0, 0, 0, 0.6);
+/* For IE 5.5 - 7*/
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+/* For IE 8*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
